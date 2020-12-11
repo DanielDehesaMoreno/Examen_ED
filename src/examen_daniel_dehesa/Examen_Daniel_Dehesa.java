@@ -42,10 +42,16 @@ public class Examen_Daniel_Dehesa {
                     System.out.println(km + " km son " + m + " metros.");
                     break;
                 case 3:
+                    System.out.println("Introduce los km/h");
+                    double kmh=teclado.nextDouble();
+                    double ms=kmh/3.6;
+                    System.out.println(kmh+"km/h son "+ms+" m/s.");
+                    break;
+                case 4:
                     salir = true;
                     break;
                 default:
-                    System.out.println("Solo números entre 1 y 3");
+                    System.out.println("Solo números entre 1 y 4");
             }
         } while (salir == false);
     }
